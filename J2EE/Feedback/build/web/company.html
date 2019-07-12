@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Company</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <center>
+        <h2></h2>        
+        <form action="Addemployee">
+            Employee Id : <input type="text" name="id"><br><br><br>
+            Name: <input type="text" name="name"><br><br><br>
+            Company Where he/she worked for : <select name ="ctype">
+                <option value="Hospital">Hospital </option>
+                <option value="Auditfirms">Audit Firms</option>
+                <option value="Software">Software Company</option>
+                <option value="Cabs">Cabs</option>
+                <option value="customer">If customer click here</option>                
+            </select>
+            Designation : <input type="text" name="designation"><br><br><br>
+            <input type="submit" value="Add Employee Details">
+        </form >
+        <form action="Getdetail.jsp">
+                Emp id: <input type="text" name="eid"><br>
+             <input type="submit" value="Get Details">
+        </form>
+        <br>
+        <br>
+        Get best employee:
+        <form action ="Getbestemployee.jsp">
+            Company name :<input type="text" name="company">
+                  <input type="submit" value="Get Best Employee">
+        </form>
+    </center>
+</body>
+</html>
